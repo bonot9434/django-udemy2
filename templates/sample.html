@@ -1,5 +1,5 @@
 {% load static %}
-<link rel="stylesheet" type="text/css" href="{% static 'home.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'download/home.css' %}">
 
 <h1>{{ name }}</h1>
 <h1>{{ page_url | urlize}}</h1>
@@ -17,4 +17,4 @@
 
 <a href="{% url 'template_app:home' first_name='Saburo' last_name='Konishi' %}">home</a>
 
-<img src="{% static 'sample.jpg' %}">
+<img src="{% static 'download/sample.jpg' %}">
